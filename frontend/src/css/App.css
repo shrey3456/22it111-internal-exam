@@ -1,0 +1,76 @@
+* {
+  scrollbar-width: none !important;
+
+}
+
+.file-input {
+  font-size: 12px !important;
+}
+
+.slow-bounce {
+  animation: bounce 4s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.round-animate {
+  animation: circle 8s infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.round-animate-2 {
+  animation: roundAnimate 8s infinite;
+}
+
+@keyframes roundAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.clip-path {
+  clip-path: polygon(0% 0%,
+      100% 0%,
+      100% 95%,
+      50% 100%,
+      0% 95%,
+      0% 0%);
+}
